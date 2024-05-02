@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        td:last-child {
+            border-color: #424242;
+        }
+        ul {
+            list-style-type: square;
+        }
+        ol {
+            list-style-type: decimal;
+        }
+        #career {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Wlo's Resume</h1>
+        <h2>Web Developer</h2>
+    </header>
+    <section>
+        <h3 style="font-style: italic;">Skills</h3>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+        </ul>
+    </section>
+    <section>
+        <h3 id="career">Career Path</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>Position</th>
+                    <th>Company</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2018-2020</td>
+                    <td>Web Developer</td>
+                    <td>ABC Solutions</td>
+                </tr>
+                <tr>
+                    <td>2016-2018</td>
+                    <td>Junior Developer</td>
+                    <td>XYZ Tech</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>
