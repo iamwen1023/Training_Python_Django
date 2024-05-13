@@ -1,6 +1,6 @@
 import sys
 
-def capital_city(state):
+def state(city):
     states = {
     "Oregon" : "OR",
     "Alabama" : "AL",
@@ -13,15 +13,21 @@ def capital_city(state):
     "NJ": "Trenton",
     "CO": "Denver"
     }
-    if state not in states:
-        print('Unknown state')
+    key = ''
+    for k, v in capital_cities.items():
+        if v == city:
+            key = k
+            break
+    if not key:
+        print('Unknown capital city')
         return
-    key = states[state]
-    print(capital_cities[key])
+    for k, v in states.items():
+        if key == v:
+            print(k)
 
 
 if __name__ == '__main__':
     if len(sys.argv) != 2 :
         sys.exit(1)
-    capital_city(sys.argv[1])
+    state(sys.argv[1])
     
