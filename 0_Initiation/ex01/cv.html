@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,32 +10,41 @@
             border-collapse: collapse;
             width: 100%;
         }
-        th, td {
+        
+        th,
+        td {
             border: 1px solid black;
             padding: 8px;
             text-align: left;
         }
+        
         th {
             background-color: #f2f2f2;
         }
-        td:last-child {
-            border-color: #424242;
-        }
+        
         ul {
             list-style-type: square;
         }
+        
         ol {
             list-style-type: decimal;
         }
+        
         #career {
             font-style: italic;
         }
+        
+        .special-border {
+            border-color: #424242;
+        }
     </style>
 </head>
+
 <body>
     <header>
         <h1>Wlo's Resume</h1>
         <h2>Web Developer</h2>
+        <p><b>Surname:</b> Wen</p> ```
     </header>
     <section>
         <h3 style="font-style: italic;">Skills</h3>
@@ -47,6 +57,10 @@
     </section>
     <section>
         <h3 id="career">Career Path</h3>
+        <ol>
+            <li>Previous Experience 1</li>
+            <li>Previous Experience 2</li>
+        </ol>
         <table>
             <thead>
                 <tr>
@@ -64,10 +78,11 @@
                 <tr>
                     <td>2016-2018</td>
                     <td>Junior Developer</td>
-                    <td>XYZ Tech</td>
+                    <td class="special-border">XYZ Tech</td>
                 </tr>
             </tbody>
         </table>
     </section>
 </body>
+
 </html>
